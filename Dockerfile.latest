@@ -1,5 +1,8 @@
 FROM python:3.6-buster
 
+RUN apt-get update && \
+        apt-get -y install sudo
+
 RUN mkdir -p /opencanary
 
 COPY bin /opencanary/bin
