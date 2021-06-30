@@ -5,9 +5,8 @@ services:
       container_name: opencanary
       restart: unless-stopped
       volumes:
-          # - ./opencanary/:/etc/opencanaryd/
-          # - ./data/:/root/
-          - ./opencanary.conf:/etc/opencanaryd/opencanary.conf
+           - ./opencanary/:/etc/opencanaryd/
+           - ./data/:/root/
       ports:
               - '21:21'
               - '888:80'
